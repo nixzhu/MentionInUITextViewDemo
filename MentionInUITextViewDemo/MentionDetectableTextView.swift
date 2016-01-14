@@ -29,7 +29,7 @@ class MentionDetectableTextView: UITextView {
 
             // mention
 
-            let mentionPattern = "@[A-Za-z0-9_]+$?"
+            let mentionPattern = "@[A-Za-z0-9_]+"
             let mentionExpression = try! NSRegularExpression(pattern: mentionPattern, options: NSRegularExpressionOptions())
 
             mentionExpression.enumerateMatchesInString(text, options: NSMatchingOptions(), range: textRange, usingBlock: { result, flags, stop in

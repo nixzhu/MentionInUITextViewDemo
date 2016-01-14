@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         mentionDetectableTextView.textColor = UIColor.blackColor()
         mentionDetectableTextView.font = UIFont.systemFontOfSize(18)
 
-        mentionDetectableTextView.text = "@nixzhu Do you like Apple? www.apple.com"
+        mentionDetectableTextView.text = "@nixzhu Do you like Apple? www.apple.com\n@test.@test2@_xxx"
 
         mentionDetectableTextView.tapMentionAction = { username in
             print("Hello \(username)!")
